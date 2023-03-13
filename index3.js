@@ -10,7 +10,7 @@ let back, pictures, picturesMaterial, consulting, consultingMaterial, technology
 let umnp, umnc, umnt;
 let initialRotation;
 let mouse = {};
-const THREE = window.MINDAR.IMAGE.THREE;
+//const THREE = window.MINDAR.IMAGE.THREE;
 const mindarThree = new window.MINDAR.IMAGE.MindARThree({
     container: document.querySelector("#container"),
     imageTargetSrc: "./targets.mind"
