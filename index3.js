@@ -1,7 +1,8 @@
-import { GLTFLoader } from 'node_modules/three/examples/jsm/loaders/GLTFLoader.js';
-import { RoomEnvironment } from 'node_modules/three/examples/jsm/environments/RoomEnvironment.js';
-import { FontLoader } from 'node_modules/three/examples/jsm/loaders/FontLoader.js';
-import { TextGeometry } from 'node_modules/three/examples/jsm/geometries/TextGeometry.js';
+app.use("/node_modules", express.static('./static/'));
+import { GLTFLoader } from './node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+import { RoomEnvironment } from './node_modules/three/examples/jsm/environments/RoomEnvironment.js';
+import { FontLoader } from './node_modules/three/examples/jsm/loaders/FontLoader.js';
+import { TextGeometry } from './node_modules/three/examples/jsm/geometries/TextGeometry.js';
 import { gsap } from "gsap";
 
 //#region variables
