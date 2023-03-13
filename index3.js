@@ -3,7 +3,7 @@ import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/l
 import { RoomEnvironment } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/environments/RoomEnvironment.js';
 import { FontLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/FontLoader.js';
 import { TextGeometry } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/geometries/TextGeometry.js';
-import { gsap } from "gsap";
+import { gsap } from "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js";
 
 //#region variables
 let back, pictures, picturesMaterial, consulting, consultingMaterial, technology, technologyMaterial, mdn, mdnMaterial;
