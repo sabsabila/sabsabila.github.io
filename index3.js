@@ -1,10 +1,7 @@
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { FontLoader } from 'three/addons/loaders/FontLoader.js';
-import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
-import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
-import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
-import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { GLTFLoader } from './node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+import { RoomEnvironment } from './node_modules/three/examples/jsm/environments/RoomEnvironment.js';
+import { FontLoader } from './node_modules/three/examples/jsm/loaders/FontLoader.js';
+import { TextGeometry } from './node_modules/three/examples/jsm/geometries/TextGeometry.js';
 import { gsap } from "gsap";
 
 //#region variables
