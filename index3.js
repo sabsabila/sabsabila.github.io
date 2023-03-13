@@ -1,7 +1,7 @@
-import { GLTFLoader } from '/three/addons/loaders/GLTFLoader.js';
-import { RoomEnvironment } from '/three/addons/environments/RoomEnvironment.js';
-import { FontLoader } from '/three/addons/loaders/FontLoader.js';
-import { TextGeometry } from '/three/addons/geometries/TextGeometry.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { FontLoader } from 'three/addons/loaders/FontLoader.js';
+import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
 //import * as gsap from "gsap";
 
 //#region variables
