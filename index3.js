@@ -1,7 +1,7 @@
-import { GLTFLoader } from './node_modules/three/examples/jsm/loaders/GLTFLoader.js';
-import { RoomEnvironment } from './node_modules/three/examples/jsm/environments/RoomEnvironment.js';
-import { FontLoader } from './node_modules/three/examples/jsm/loaders/FontLoader.js';
-import { TextGeometry } from './node_modules/three/examples/jsm/geometries/TextGeometry.js';
+import { GLTFLoader } from 'node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+import { RoomEnvironment } from 'node_modules/three/examples/jsm/environments/RoomEnvironment.js';
+import { FontLoader } from 'node_modules/three/examples/jsm/loaders/FontLoader.js';
+import { TextGeometry } from 'node_modules/three/examples/jsm/geometries/TextGeometry.js';
 import { gsap } from "gsap";
 
 //#region variables
@@ -20,7 +20,7 @@ const raycaster = new THREE.Raycaster();
 const pmremGenerator = new THREE.PMREMGenerator( renderer );
 const anchor = mindarThree.addAnchor(0);
 const clock = new THREE.Clock();
-const loader = new GLTFLoader();
+//const loader = new GLTFLoader();
 const fontLoader = new FontLoader();
 
 // const renderScene = new RenderPass(scene, camera);
