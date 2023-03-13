@@ -20,7 +20,7 @@ const raycaster = new THREE.Raycaster();
 const pmremGenerator = new THREE.PMREMGenerator( renderer );
 const anchor = mindarThree.addAnchor(0);
 const clock = new THREE.Clock();
-//const loader = new GLTFLoader();
+const loader = new GLTFLoader();
 const fontLoader = new FontLoader();
 
 // const renderScene = new RenderPass(scene, camera);
