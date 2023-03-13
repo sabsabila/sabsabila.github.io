@@ -1,8 +1,7 @@
-import * as THREE from "./node_modules/three/build/three.module.js";
-import { GLTFLoader } from './node_modules/three/examples/jsm/loaders/GLTFLoader.js';
-import { RoomEnvironment } from './node_modules/three/examples/jsm/environments/RoomEnvironment.js';
-import { FontLoader } from './node_modules/three/examples/jsm/loaders/FontLoader.js';
-import { TextGeometry } from './node_modules/three/examples/jsm/geometries/TextGeometry.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { FontLoader } from 'three/addons/loaders/FontLoader.js';
+import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
 import { gsap } from "gsap";
 
 //#region variables
@@ -10,7 +9,7 @@ let back, pictures, picturesMaterial, consulting, consultingMaterial, technology
 let umnp, umnc, umnt;
 let initialRotation;
 let mouse = {};
-//const THREE = window.MINDAR.IMAGE.THREE;
+const THREE = window.MINDAR.IMAGE.THREE;
 const mindarThree = new window.MINDAR.IMAGE.MindARThree({
     container: document.querySelector("#container"),
     imageTargetSrc: "./targets.mind"
