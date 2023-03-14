@@ -1,5 +1,3 @@
-//import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
@@ -37,7 +35,7 @@ loader.load( './LittlestTokyo.glb', function ( gltf ) {
     model = gltf.scene;
     model.position.set(0, 0, 0);
     model.scale.set(0.001, 0.001, 0.001);
-    //model.object.rotateZ(90);
+    model.rotation.x = 90
     model.name = "model";
 	anchor.group.add( model );
 
@@ -50,8 +48,9 @@ loader.load( './LittlestTokyo.glb', function ( gltf ) {
 
 loader.load( './location_marker.gltf', function ( gltf ) {
     marker = gltf.scene;
-    marker.position.set(0, 0.25, 0);
+    marker.position.set(0, 0, 0.25);
     marker.scale.set(0.01, 0.01, 0.01);
+    marker.rotation.x = 90
     var newMaterial = new THREE.MeshStandardMaterial({color: 0xff0000});
     marker.traverse((o) => {
     if (o.isMesh) o.material = newMaterial;
