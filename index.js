@@ -1,5 +1,7 @@
+//import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
+//import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 
 let mixer, model, marker, cat;
@@ -15,7 +17,7 @@ const raycaster = new THREE.Raycaster();
 const pmremGenerator = new THREE.PMREMGenerator( renderer );
 const anchor = mindarThree.addAnchor(0);
 const clock = new THREE.Clock();
-const dracoLoader = new DRACOLoader();
+//const dracoLoader = new DRACOLoader();
 const loader = new GLTFLoader();
 
 renderer.setPixelRatio( window.devicePixelRatio );
@@ -26,15 +28,15 @@ document.body.appendChild(renderer.domElement);
 
 scene.environment = pmremGenerator.fromScene( new RoomEnvironment(), 0.04 ).texture;
 
-dracoLoader.setDecoderPath( 'https://github.com/sabsabila/sabsabila.github.io/tree/main/node_modules/three/examples/jsm/libs/draco/gltf/' );
-loader.setDRACOLoader( dracoLoader );
+//dracoLoader.setDecoderPath( 'https://github.com/sabsabila/sabsabila.github.io/tree/main/node_modules/three/examples/jsm/libs/draco/gltf' );
+//loader.setDRACOLoader( dracoLoader );
 
 camera.position.set(0, 2, 5);
 
-loader.load( './LittlestTokyo.glb', function ( gltf ) {
+loader.load( './src/models/plane/plane.gltf', function ( gltf ) {
     model = gltf.scene;
     model.position.set(0, 0, 0);
-    model.scale.set(0.001, 0.001, 0.001);
+    model.scale.set(1, 1, 1);
     model.rotation.x = 90
     model.name = "model";
 	anchor.group.add( model );
@@ -48,7 +50,7 @@ loader.load( './LittlestTokyo.glb', function ( gltf ) {
 
 loader.load( './location_marker.gltf', function ( gltf ) {
     marker = gltf.scene;
-    marker.position.set(0, 0, 0.25);
+    marker.position.set(0, 0, 0.3);
     marker.scale.set(0.01, 0.01, 0.01);
     marker.rotation.x = 90
     var newMaterial = new THREE.MeshStandardMaterial({color: 0xff0000});
