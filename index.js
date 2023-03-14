@@ -26,7 +26,7 @@ document.body.appendChild(renderer.domElement);
 
 scene.environment = pmremGenerator.fromScene( new RoomEnvironment(), 0.04 ).texture;
 
-dracoLoader.setDecoderPath( 'node_modules/three/examples/jsm/libs/draco/gltf/' );
+dracoLoader.setDecoderPath( 'https://github.com/sabsabila/sabsabila.github.io/tree/main/node_modules/three/examples/jsm/libs/draco/gltf/' );
 loader.setDRACOLoader( dracoLoader );
 
 camera.position.set(0, 2, 5);
