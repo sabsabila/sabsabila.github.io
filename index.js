@@ -50,7 +50,7 @@ loader.load( './plane/scene.gltf', function ( gltf ) {
 
 loader.load( './location_marker.gltf', function ( gltf ) {
     marker = gltf.scene;
-    marker.position.set(0, 0.3, 0);
+    marker.position.set(0, 1, 0);
     marker.scale.set(0.01, 0.01, 0.01);
     //marker.rotation.x = -90
     var newMaterial = new THREE.MeshStandardMaterial({color: 0xff0000});
