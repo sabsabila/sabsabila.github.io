@@ -33,7 +33,7 @@ scene.environment = pmremGenerator.fromScene( new RoomEnvironment(), 0.04 ).text
 
 camera.position.set(0, 2, 5);
 
-loader.load( './plane.gltf', function ( gltf ) {
+loader.load( './src/models/plane/scene.gltf', function ( gltf ) {
     model = gltf.scene;
     model.position.set(0, 0, 0);
     model.scale.set(1, 1, 1);
